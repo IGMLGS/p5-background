@@ -3,11 +3,11 @@ let canvas;
 
 function setup() {
 
-    let clientHeight = document.getElementById('text').clientHeight;
-    let clientWidth = document.getElementById('text').clientWidth;
+    let clientHeight = document.getElementById('text').clientHeight
+    let clientWidth = document.getElementById('text').clientWidth
 
-    var canvas = createCanvas(clientWidth, clientHeight);
-    canvas.parent("text");
+    var canvas = createCanvas(clientWidth, clientHeight)
+    canvas.parent("text")
     canvas.style('z-index','-1')
     canvas.style('position','absolute')
 
@@ -15,6 +15,13 @@ function setup() {
 
     l = new Line()
 
+}
+
+function resizeWindow() {
+    let clientHeight = document.getElementById('text').clientHeight
+    let clientWidth = document.getElementById('text').clientWidth
+
+    canvasResize(clientWidth, clientHeight)
 }
 
 function draw() {
@@ -35,7 +42,7 @@ class Line {
         this.x = 0
         this.y = 0
 
-        this.radius = 100;
+        this.radius = 100
 
         this.newPoint = createVector(random(width), random(height))
 
