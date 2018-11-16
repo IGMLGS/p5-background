@@ -17,11 +17,13 @@ function setup() {
 
 }
 
-function resizeWindow() {
+function windowResized() {
+
     let clientHeight = document.getElementById('text').clientHeight
     let clientWidth = document.getElementById('text').clientWidth
 
-    canvasResize(clientWidth, clientHeight)
+    resizeCanvas(clientWidth, clientHeight)
+
 }
 
 function draw() {
