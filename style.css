@@ -63,3 +63,22 @@ body {
     letter-spacing: 1rem;
     text-transform: uppercase;
 }
+
+@media (max-width: 568px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+
+    .bg1 h1 {
+        color: #ed225d;
+        font-size: 6rem;
+        margin: 0;
+    }
+    .footer p {
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+}
