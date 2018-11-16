@@ -7,7 +7,7 @@ function setup() {
     let clientWidth = document.getElementById('text').clientWidth
 
     var canvas = createCanvas(clientWidth, clientHeight)
-    canvas.parent("text")
+    canvas.parent('text')
     canvas.style('z-index','-1')
     canvas.style('position','absolute')
 
