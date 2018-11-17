@@ -73,9 +73,9 @@ class Line {
 
         }
 
-        if ((this.path.length % 10) === 0) {
+        if (this.path.length > 10) {
 
-            console.log('ok')
+            this.path.splice(0, 1)
 
         }
 
